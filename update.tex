@@ -1,0 +1,107 @@
+\documentclass[aspectratio=1610]{beamer}
+\input{preamble.tex}
+\addbibresource{update.bib}
+% Presentation info (title, author, date, etc {{{
+\title[Research Update]{CEI Group Meeting:\\Project Update Template}
+\author{Randy Linderman}
+\institute[Duke]{Electrical and Computer Engineering\\Duke University}
+\date{\today}
+% }}}
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+\begin{frame}[t]
+  \frametitle{Updates}
+  \begin{itemize}
+    \item[\notstarted] Haven't started this yet
+    \item[\wontfix] Decided not to do this
+    \item[\inprogress] Working on this.
+    \item[\done] Finished this!
+  \end{itemize}
+\end{frame}
+
+\section{How to make a nice research update}
+\begin{frame}[t]
+  \frametitle{Research update guidelines}
+  \framesubtitle{Research update structure}
+  \begin{itemize}
+    \item Generally its a good idea to split the update into sections to give
+      the audience an idea of what to expect.
+    \item Presentations are 15 minutes, however, they can be shorter. Don't
+      present information that is not pertinent to the group.
+    \begin{itemize}
+      \item Don't attempt to fill the 15 minutes by discussing irrelavent
+        papers. This is a waste of everyone's time.
+    \end{itemize}
+    \item Citations\footfullcite{linderman2025bnp4ood}$^,$\footfullcite{linderman23}$^,$\footfullcite{zhang2021mixture}
+      are supported as well as math commands!
+      \begin{align*}
+        \cN(x|\mu, \sigma^2) &= \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right) \\
+        \E[x] &= \mu
+      \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Research update guidelines}
+  \framesubtitle{Literature review}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{small}
+        \hspace{-.75em} When presenting papers, discuss them in the context of your research. Do
+        not present the paper's method just because it's interesting.
+
+        \vspace{0.5cm} Instead, think about what insights you can glean from the paper to improve
+        or guide your own work. Also, think critically about the paper and
+        question its assumptions, methods, and results to determine significance.
+
+        \vspace{0.5cm}
+        Beyond citing with bibtex it is a good idea to present the authors'
+        institution(s) and PI.
+      \end{small}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \begin{scriptsize}
+        \item Prefer footnote citations so you don't have to
+          jump to the end of the presentation to see the citation. However, you
+          can include a references section if its helpful.
+        \item Note that citations in 2 column mode cause problems with the
+          footnotes. To properly cite in 2 column mode, use
+          \verb$\footnotemark$. And outside the \texttt{columns} environment,
+          use \verb$\footnotetext[1]{\fullcite{citekey}}$.\footnotemark
+        \item Otherwise, \verb$\footfullcite{citekey}$.
+        \end{scriptsize}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \footnotetext[4]{\fullcite{zhang2021mixture}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Research update guidelines}
+  \framesubtitle{Example figure}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      Figures often look best when presented in the \texttt{columns} environment.
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/dukeshield.pdf}
+        \caption{Duke Shield}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[t,allowframebreaks]
+  \frametitle{References}
+  \printbibliography
+\end{frame}
+\end{document}
+% vim: foldmethod=marker : foldlevel=0:
