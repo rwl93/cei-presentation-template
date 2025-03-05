@@ -1,8 +1,8 @@
 # Duke CEI Presentation Template w/ Beamer
 
 Here is the Duke CEI template that I use to create presentations with LaTeX's
-beamer package. [./update.tex](The update.tex) file is the presentation file
-that should be edited. [./preamble.tex](The preamble.tex) file contains the
+beamer package. [update.tex](The update) file is the presentation file
+that should be edited. [preamble.tex](The preamble) file contains the
 title page and imports various latex packages that are commonly used.
 
 ## Directory structure for Multiple Presentations
