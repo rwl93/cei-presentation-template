@@ -1,8 +1,8 @@
 # Duke CEI Presentation Template w/ Beamer
 
 Here is the Duke CEI template that I use to create presentations with LaTeX's
-beamer package. [update.tex](The update) file is the presentation file
-that should be edited. [preamble.tex](The preamble) file contains the
+beamer package. [The `update.tex`](update.tex) file is the presentation file
+that should be edited. [The `preamble.tex`](preamble.tex) file contains the
 title page and imports various latex packages that are commonly used.
 
 ## Directory structure for Multiple Presentations
@@ -24,9 +24,9 @@ preamble.
 
 ## Viewing
 I prefer to view informal presentations with
-[https://pwmt.org/projects/zathura/](Zathura) for its minimalist interface and
+[Zathura](https://pwmt.org/projects/zathura/) for its minimalist interface and
 efficient navigation. If you would like a presenter view similar to Powerpoint,
-I like to use [https://pdfpc.github.io/](pdfpc). You can view a beamer pdf with
+I like to use [pdfpc](https://pdfpc.github.io/). You can view a beamer pdf with
 notes in pdfpc using the `-n bottom` option. See the pdfpc
-[https://github.com/pdfpc/pdfpc/releases/latest/download/pdfpc-demo.pdf](guide)
+[guide](https://github.com/pdfpc/pdfpc/releases/latest/download/pdfpc-demo.pdf)
 for a description of all the pdfpc features.
